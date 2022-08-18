@@ -1,0 +1,91 @@
+
+//Khai báo biến
+//bg 
+$bg-c1-primary: rgb(42, 115, 221);
+$bg-c1-secondary: rgb(245, 249, 254);
+$bg-c2-secondary: #fff;
+$bg-none: rgba(0, 0, 0, 0);
+
+//text-color
+$text-c1-primary: rgb(42, 115, 221);
+$text-c1-dark: #000;
+$text-c1-light: #fff;
+
+
+
+//text-size
+$text-xs: 10px;
+$text-base: 16px;
+$text-xl: 18px;
+$text-2xl: 20px;
+$text-3xl: 30px;
+$text-4xl: 40px;
+$text-5xl: 50px;
+$text-6xl: 60px;
+
+//font-weight
+$text-light: 300;
+$text-regular: 400;
+$text-semibold: 600;
+$text-bold: 700;
+
+/*
+    margin
+*/
+
+// $mt-1: 15px;
+
+//mixin :Hàm trong scss
+//mixin: Cho phép định nghĩa các giá trị mặc định cho tham số
+
+// $icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
+
+$arr-color-red :("100": "#FF0099","200":"#FF0066","300":"#FF0033","400":"#FF0000");
+
+@each $color-number,$color-value in $arr-color-red {
+    .color-red-#{$color-number} {
+        color: $color-value;
+    }
+}
+
+
+
+
+
+@mixin text($fz: $text-base, $fw: $text-regular, $c: $text-c1-dark) {
+    font-size: $fz;
+    font-weight: $fw;
+    color: $c;
+}
+
+@mixin button($fs, $fw, $c, $bg, $pd, $bd, $br, $bg-hover, $c-hover) {
+    // font-size: $fs;
+    // font-weight: 600;
+    // color: rgb(42, 115, 221);
+    @include text($fs, $fw , $c );
+    background: $bg;
+    padding: $pd;
+    border: $bd;
+    border-radius: $br;
+    cursor: pointer;
+    &:hover {
+        background: $bg-hover;
+        color: $c-hover;
+    }
+
+}
+.color { 
+    color: red;
+}
+
+@mixin background-img() {
+    @extend .color;
+    background-image: url('https://picsum.photos/2000');
+}
+
+
+
+.background-img{
+    @extend .color;
+    @include background-img();
+}
