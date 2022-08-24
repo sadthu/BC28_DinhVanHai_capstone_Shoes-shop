@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  height: 50px;
+  background-color: #000;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 50px;
+}
+header .container .header_acc {
+  position: relative;
+}
+header .container .header_acc .ticket {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -1px;
+  left: -70px;
+}
+header .container .header_acc .amount {
+  font-weight: 300;
+  font-size: 30px;
+  width: 35px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  position: absolute;
+  top: 7px;
+  left: -40px;
+}
+header .container .header_acc .login a {
+  color: rgba(247, 247, 247, 0.7490196078);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 15px;
+  text-decoration: none;
+}
+header .container .header_acc .register a {
+  color: rgba(247, 247, 247, 0.7490196078);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.menu {
+  height: 50px;
+}
+.menu .container {
+  line-height: 50px;
+}
+.menu .container ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  gap: 25px;
+}
+.menu .container ul li a {
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  opacity: 0.7;
+  text-decoration: none;
+}
+.menu .container ul li:first-child {
+  border-bottom: 1px solid #000;
+}
+.menu .container ul li:first-child a {
+  opacity: 1;
+}
+
+.product__detail {
+  height: 530px;
+  padding: 60px;
+}
+.product__detail .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.product__detail .container .img {
+  width: 334px;
+  height: 355px;
+  background-color: #F8F8F8;
+  line-height: 355px;
+  text-align: center;
+}
+.product__detail .container .infor {
+  justify-items: center;
+  padding: 10px;
+  margin-left: 118px;
+  width: 45%;
+}
+.product__detail .container .infor .pro__name {
+  font-size: 30px;
+  font-weight: 300;
+}
+.product__detail .container .infor .pro__inf {
+  font-size: 16px;
+  font-weight: 400;
+}
+.product__detail .container .infor h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1ED90E;
+}
+.product__detail .container .infor .product__size {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.product__detail .container .infor .product__size div {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(204, 204, 204, 0.8);
+  text-align: center;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.product__detail .container .infor .pro__price {
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 17px;
+  color: red;
+}
+.product__detail .container .infor .amount button {
+  width: 50px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 30px;
+  padding: 0;
+}
+.product__detail .container .infor .amount span {
+  font-weight: 400;
+  font-size: 30px;
+  vertical-align: bottom;
+  margin: 0 20px;
+}
+.product__detail .container .infor .add__pro {
+  width: 175px;
+  height: 64px;
+  border: none;
+  margin: 7px 0 39px 0;
+  color: #fff;
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+}
+
+.feature {
+  padding-top: 16px;
+  padding-bottom: 70px;
+}
+.feature .container h2 {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+.feature .container .row .col-4 {
+  padding: 35px;
+}
+.feature .container .row .col-4 .product__wrap {
+  background-color: #f8f8f8;
+}
+.feature .container .row .col-4 .product__wrap .product-infor {
+  padding: 10px;
+}
+.feature .container .row .col-4 .product__wrap .product-infor .img__product {
+  text-align: center;
+}
+.feature .container .row .col-4 .product__wrap .product-infor .img__product img {
+  width: 220px;
+  height: 156px;
+}
+.feature .container .row .col-4 .product__wrap .product-infor h4 {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.feature .container .row .col-4 .product__wrap .product-infor p {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 0 13px 0;
+}
+.feature .container .row .col-4 .price {
+  display: flex;
+}
+.feature .container .row .col-4 .price button {
+  padding: 17px 0;
+  width: 150px;
+  font-size: 20px;
+  font-weight: 300;
+  background: #F8B653;
+  color: #fff;
+  border: none;
+  width: 55%;
+}
+.feature .container .row .col-4 .price div {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DEDDDC;
+}
+
+footer img {
+  width: 100%;
+}
