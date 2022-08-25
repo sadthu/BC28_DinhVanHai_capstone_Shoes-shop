@@ -77,10 +77,7 @@ header .container .header_acc .register a {
   opacity: 0.7;
   text-decoration: none;
 }
-.menu .container ul li:first-child {
-  border-bottom: 1px solid #000;
-}
-.menu .container ul li:first-child a {
+.menu .container ul li:hover a {
   opacity: 1;
 }
 
@@ -99,6 +96,9 @@ header .container .header_acc .register a {
   background-color: #F8F8F8;
   line-height: 355px;
   text-align: center;
+}
+.product__detail .container .img img {
+  width: 100%;
 }
 .product__detail .container .infor {
   justify-items: center;
@@ -175,6 +175,10 @@ header .container .header_acc .register a {
 }
 .feature .container .row .col-4 .product__wrap {
   background-color: #f8f8f8;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .feature .container .row .col-4 .product__wrap .product-infor {
   padding: 10px;
@@ -199,7 +203,7 @@ header .container .header_acc .register a {
 .feature .container .row .col-4 .price {
   display: flex;
 }
-.feature .container .row .col-4 .price button {
+.feature .container .row .col-4 .price a {
   padding: 17px 0;
   width: 150px;
   font-size: 20px;
@@ -208,6 +212,11 @@ header .container .header_acc .register a {
   color: #fff;
   border: none;
   width: 55%;
+  text-decoration: none;
+  text-align: center;
+}
+.feature .container .row .col-4 .price a:hover {
+  opacity: 0.8;
 }
 .feature .container .row .col-4 .price div {
   width: 45%;

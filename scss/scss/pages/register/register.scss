@@ -83,11 +83,8 @@ header {
                     opacity: 0.7;
                     text-decoration: none;
                 }
-
-                &:first-child {
-                    border-bottom: 1px solid $bg-dark;
-
-                    a {
+                &:hover {
+                    a{
                         opacity: 1;
                     }
                 }
@@ -147,7 +144,7 @@ header {
                     }
                 }
 
-                div {
+                form {
                     font-size: $text-3xl;
                     font-weight: $text-regular;
                     margin-top: 15px;
@@ -161,13 +158,9 @@ header {
                     .gender {
                         margin-right: $text-xs;
                     }
-
-                    .male-label {
-                        margin-right: 5px;
-                    }
                 }
 
-                button {
+                #btnSubmit {
                     margin-top: 85px;
                     border: none;
                     font-size: 30px;
@@ -176,6 +169,14 @@ header {
                     color: #fff;
                     padding: 12px 80px;
                     width: 70%;
+                    border-radius: 5px;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                    &:focus {
+                        border: none;
+                        outline: none;
+                    }
                 }
             }
         }

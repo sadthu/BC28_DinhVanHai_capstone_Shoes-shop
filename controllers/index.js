@@ -29,7 +29,7 @@ function renderProduct(arrProduct){
                         <p>${product.shortDescription}</p>
                     </div>
                     <div class="price">
-                        <button>Buy Now</button>
+                        <a href="./detail.html?productid=${product.id}">Buy Now</a>
                         <div>${product.price}$</div>
                     </div>
                 </div>

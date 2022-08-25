@@ -166,6 +166,10 @@ header {
 
                 .product__wrap {
                     background-color: #f8f8f8;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
 
                     .product-infor {
                         padding: 10px;
@@ -195,8 +199,8 @@ header {
 
                 .price {
                     display: flex;
-
-                    button {
+                   
+                    a {
                         padding: 17px 0;
                         width: $wh-5xxx;
                         font-size: $text-2xl;
@@ -205,6 +209,11 @@ header {
                         color: $text-c1-light;
                         border: none;
                         width: 55%;
+                        text-decoration: none;
+                        text-align: center;
+                        &:hover {
+                            opacity: 0.8;
+                        }
                     }
 
                     div {

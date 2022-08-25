@@ -36,7 +36,7 @@
     <section class="menu">
         <div class="container">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="#">Man</a></li>
                 <li><a href="#">Women</a></li>
                 <li><a href="#">Kid</a></li>
@@ -49,22 +49,20 @@
             <h2>Register</h2>
             <div class="container__wrap">
                 <div class="register__left">
-                    <input type="text" placeholder="email">
-                    <input type="text" placeholder="password">
+                    <input type="text" placeholder="email" id="email">
+                    <input type="text" placeholder="password" id="password">
                     <input type="text" placeholder="password confirm">
                 </div>
 
                 <div class="register__right">
-                    <input type="text" placeholder="name">
-                    <input type="text" placeholder="phone">
-                    <div>
+                    <input type="text" placeholder="name" id="name">
+                    <input type="text" placeholder="phone" id="phone">
+                    <form>
                         <label for="" class="gender">Gender</label>
-                        <input type="radio" id="male" name="fav_language" value="true">
-                        <label for="male" class="male-label">Male</label>
-                        <input type="radio" id="female" name="fav_language" value="false">
-                        <label for="female" class="female-lable">Female</label>
-                    </div>
-                    <button>Submit</button>
+                        <input type="radio" id="male" name="fav_language" value="true"> Male
+                        <input type="radio" id="female" name="fav_language" value="false"> Female
+                    </form>
+                    <button id="btnSubmit">Submit</button>
                 </div>
             </div>
         </div>
@@ -84,6 +82,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+        integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./models/Product.js"></script>
+    <script src="./controllers/register.js"></script>
 </body>
 
 </html>
